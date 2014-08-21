@@ -4,22 +4,23 @@
 
 /*! VelocityJS.org (0.11.7). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
 
-;(function (factory) {    
-    /* CommonJS module. */
-    if (typeof module === "object" && typeof module.exports === "object") {
-        module.exports = factory(window.Velocity ? window.jQuery : require("jquery"));
-    /* AMD module. */
-    } else if (typeof define === "function" && define.amd) {        
-        if (window.Velocity) {
-            define("velocity", factory);
-        } else {
-            define("velocity", [ "jquery" ], factory)
-        }
-    /* Browser globals. */
-    } else {        
-        factory(window.jQuery);
-    }
-}(function (jQuery) {
+//;(function (factory) {    
+//    /* CommonJS module. */
+//   if (typeof module === "object" && typeof module.exports === "object") {
+//        module.exports = factory(window.Velocity ? window.jQuery : require("jquery"));
+//    /* AMD module. */
+//    } else if (typeof define === "function" && define.amd) {        
+//        if (window.Velocity) {
+//            define("velocity", factory);
+//        } else {
+//            define("velocity", [ "jquery" ], factory)
+//        }
+//    /* Browser globals. */
+//    } else {        
+//        factory(window.jQuery);
+//    }
+//}
+(function (jQuery) {
 return function (global, window, document, undefined) {
     /*
     Structure:
