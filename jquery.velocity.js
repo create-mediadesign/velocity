@@ -3417,7 +3417,8 @@ return function (global, window, document, undefined) {
 
     return Velocity;
 }((jQuery || window), window, document);
-}));
+})(jQuery);
+//);
 
 /******************
    Known Issues
